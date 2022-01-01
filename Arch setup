@@ -1,0 +1,4 @@
+pacman -S vim bspwm sxhkd rofi papirus-icon-theme alacritty ranger neofetch networkmanager git xorg xorg-xinit nitrogen picom firefox base-devel pavucontrol
+
+systemctl enable NetworkManager
+
