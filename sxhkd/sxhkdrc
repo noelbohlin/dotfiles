@@ -10,21 +10,40 @@ super + Return
 super + @space
 	rofi -show drun
 
+# rofi run launcher
+super + alt + @space
+	rofi -show run
+
 # window switcher
 alt + Tab
 	rofi -show window
 
-
 # make sxhkd reload its configuration files:
-alt + Escape
+super + Escape
 	pkill -USR1 -x sxhkd
+
+#
+# volume keys
+#
+
+# volume up
+XF86AudioRaiseVolume
+	pactl -- set-sink-volume alsa_output.pci-0000_22_00.1.hdmi-stereo +5%
+
+# volume down
+XF86AudioLowerVolume
+	pactl -- set-sink-volume alsa_output.pci-0000_22_00.1.hdmi-stereo -5%
+
+# volume mute
+XF86AudioMute
+	pactl -- set-sink-volume alsa_output.pci-0000_22_00.1.hdmi-stereo 0%
 
 #
 # bspwm hotkeys
 #
 
 # quit/restart bspwm
-ctrl + alt + {q,r}
+super + alt + {q,r}
 	bspc {quit,wm -r}
 
 # close and kill
