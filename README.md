@@ -25,10 +25,10 @@ Feel free to explore and use any part of these dotfiles in your own setup. Howev
 
 This repository is organized into several directories, each containing configuration files for a specific tool or utility:
 
-- `Arch setup`: Contains setup instructions or scripts specific to an Arch Linux installation.
+- `Arch setup`: Contains setup instructions or scripts specific to my Arch Linux installation.
 - `alacritty/`: Contains configuration files for the Alacritty terminal emulator.
 - `bspwm/`: Contains the `bspwmrc` file, which is the configuration file for the BSPWM window manager.
-- `neofetch/`: Contains the `config.conf` file, which is likely used to configure the Neofetch command-line tool.
+- `neofetch/`: Contains the `config.conf` file, which is used to configure the Neofetch command-line tool.
 - `nitrogen/`: Contains configuration files for the Nitrogen wallpaper manager.
 - `polybar/`: Contains the `config` file, which is the configuration file for the Polybar status bar.
 - `pulse/`: Contains various files related to the PulseAudio sound server.
